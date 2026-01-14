@@ -38,7 +38,7 @@ export const ResumePage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 py-8 px-2">
+    <div className="min-h-screen from-slate-900 via-purple-900 to-slate-900 py-8 px-2">
       <div className="max-w-7xl mx-auto">
         {/* Main Background Container - Glassmorphic */}
         <div className="backdrop-blur-md bg-white/5 border border-white/10 rounded-md p-4 shadow-2xl">
