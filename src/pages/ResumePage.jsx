@@ -82,12 +82,12 @@ export const ResumePage = () => {
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
           <div className="space-y-0">
-            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-gradient-to-br from-blue-50/60 to-indigo-50/60 border border-gray-300/50 hover:border-blue-300/70">
+            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-gradient-to-br from-slate-50/60 to-slate-100/60 border border-gray-300/50 hover:border-indigo-300/70">
               <div className="mb-6 text-center">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1 tracking-tight text-blue-900">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1 tracking-tight text-slate-900">
                   RUSHIKESH
                 </h1>
-                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 text-blue-900 via-purple-500 to-pink-500 bg-clip-text">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 text-slate-900 via-indigo-600 to-indigo-700 bg-clip-text">
                   KALE
                 </h1>
                 <p className="text-base sm:text-lg font-light text-purple-700">
@@ -118,12 +118,12 @@ export const ResumePage = () => {
               </div>
             </div>
 
-            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-gradient-to-br from-purple-50/60 to-pink-50/60 border border-gray-300/50 hover:border-purple-300/70">
+            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-gradient-to-br from-slate-50/60 to-indigo-50/60 border border-gray-300/50 hover:border-indigo-300/70">
               <div className="flex items-center gap-3 mb-4">
-                <div className="p-2 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg">
+                <div className="p-2 bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-lg">
                   <Zap className="text-white" size={20} />
                 </div>
-                <h2 className="text-xl sm:text-2xl font-bold text-purple-900">
+                <h2 className="text-xl sm:text-2xl font-bold text-slate-900">
                   About
                 </h2>
               </div>
@@ -139,12 +139,12 @@ export const ResumePage = () => {
               </p>
             </div>
 
-            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-gradient-to-br from-green-50/60 to-cyan-50/60 border border-gray-300/50 hover:border-green-300/70">
+            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-gradient-to-br from-slate-50/60 to-indigo-50/60 border border-gray-300/50 hover:border-indigo-300/70">
               <div className="flex items-center gap-3 mb-5">
-                <div className="p-2 bg-gradient-to-br from-green-500 to-cyan-500 rounded-lg">
+                <div className="p-2 bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-lg">
                   <Code className="text-white" size={20} />
                 </div>
-                <h2 className="text-xl sm:text-2xl font-bold text-green-900">
+                <h2 className="text-xl sm:text-2xl font-bold text-slate-900">
                   Skills
                 </h2>
               </div>
@@ -166,7 +166,7 @@ export const ResumePage = () => {
               </div>
 
               <div className="backdrop-blur-sm p-3 sm:p-5 min-h-40 bg-gradient-to-br from-green-100/40 to-cyan-100/40 border border-gray-300/50">
-                <h3 className="text-xs sm:text-sm font-bold mb-3 text-green-900">
+                <h3 className="text-xs sm:text-sm font-bold mb-3 text-slate-900">
                   {skillCategories[activeSkillCategory].title}
                 </h3>
                 <div className="flex flex-wrap gap-2">
@@ -184,26 +184,26 @@ export const ResumePage = () => {
               </div>
             </div>
 
-            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-gradient-to-br from-indigo-50/60 to-blue-50/60 border border-gray-300/50 hover:border-indigo-300/70">
+            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-gradient-to-br from-slate-50/60 to-indigo-50/60 border border-gray-300/50 hover:border-indigo-300/70">
               <div className="flex items-center gap-3 mb-5">
-                <div className="p-2 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-lg">
+                <div className="p-2 bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-lg">
                   <GraduationCap className="text-white" size={20} />
                 </div>
-                <h2 className="text-xl sm:text-2xl font-bold text-indigo-900">
+                <h2 className="text-xl sm:text-2xl font-bold text-slate-900">
                   Education
                 </h2>
               </div>
               <div className="space-y-3">
-                <div className="backdrop-blur-sm p-3 sm:p-4 transition-all bg-gradient-to-r from-indigo-100/40 to-blue-100/40 border border-gray-300/50 hover:border-indigo-300/70">
-                  <h3 className="font-bold text-xs sm:text-sm text-indigo-900">
+                  <div className="backdrop-blur-sm p-3 sm:p-4 transition-all bg-gradient-to-r from-slate-100/40 to-indigo-100/40 border border-gray-300/50 hover:border-indigo-300/70">
+                  <h3 className="font-bold text-xs sm:text-sm text-slate-900">
                     PG Diploma in Advanced Computing
                   </h3>
                   <p className="text-xs text-gray-600">
                     C-DAC, Pune • Mar 2022 – Sep 2022
                   </p>
                 </div>
-                <div className="backdrop-blur-sm p-3 sm:p-4 transition-all bg-gradient-to-r from-indigo-100/40 to-blue-100/40 border border-indigo-200/50 hover:border-indigo-300/70">
-                  <h3 className="font-bold text-xs sm:text-sm text-indigo-900">
+                  <div className="backdrop-blur-sm p-3 sm:p-4 transition-all bg-gradient-to-r from-slate-100/40 to-indigo-100/40 border border-gray-300/50 hover:border-indigo-300/70">
+                  <h3 className="font-bold text-xs sm:text-sm text-slate-900">
                     Bachelor of Engineering (Mechanical)
                   </h3>
                   <p className="text-xs text-gray-600">
@@ -215,36 +215,36 @@ export const ResumePage = () => {
           </div>
 
           <div className="space-y-0">
-            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-gradient-to-br from-orange-50/60 to-red-50/60 border border-gray-300/50 hover:border-orange-300/70">
+            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-gradient-to-br from-slate-50/60 to-indigo-50/60 border border-gray-300/50 hover:border-indigo-300/70">
               <div className="flex items-center gap-3 mb-6">
-                <div className="p-2 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg">
+                <div className="p-2 bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-lg">
                   <Briefcase className="text-white" size={24} />
                 </div>
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-orange-900">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900">
                   Experience
                 </h2>
               </div>
 
               <div className="space-y-0 md:space-y-6">
-                <div className="backdrop-blur-sm p-4 sm:p-5 transition-all bg-gradient-to-br from-blue-100/40 to-cyan-100/40 border border-blue-200/50 hover:border-blue-300/70">
+                <div className="backdrop-blur-sm p-4 sm:p-5 transition-all bg-gradient-to-br from-slate-100/40 to-indigo-100/40 border border-gray-300/50 hover:border-indigo-300/70">
                   <div className="mb-3">
-                    <h3 className="text-base sm:text-lg font-bold text-blue-900">
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900">
                       Senior Salesforce Developer
                     </h3>
-                    <p className="font-semibold text-sm text-blue-600">
+                    <p className="font-semibold text-sm text-indigo-600">
                       BAJAJ FINSERV
                     </p>
                     <p className="text-xs text-gray-600">
                       Pune/Bengaluru, India
                     </p>
-                    <span className="inline-block mt-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-200 border border-blue-400 text-blue-700">
+                    <span className="inline-block mt-2 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-200 border border-indigo-400 text-indigo-700">
                       Nov 2024 – Present
                     </span>
                   </div>
                   <ul className="space-y-2 text-xs text-gray-700">
                     <li className="flex gap-2">
                       <ChevronRight
-                        className="text-blue-500 flex-shrink-0 mt-0.5"
+                        className="text-indigo-600 flex-shrink-0 mt-0.5"
                         size={14}
                       />
                       <span>
@@ -254,7 +254,7 @@ export const ResumePage = () => {
                     </li>
                     <li className="flex gap-2">
                       <ChevronRight
-                        className="text-blue-500 flex-shrink-0 mt-0.5"
+                        className="text-indigo-600 flex-shrink-0 mt-0.5"
                         size={14}
                       />
                       <span>
@@ -263,7 +263,7 @@ export const ResumePage = () => {
                     </li>
                     <li className="flex gap-2">
                       <ChevronRight
-                        className="text-blue-500 flex-shrink-0 mt-0.5"
+                        className="text-indigo-600 flex-shrink-0 mt-0.5"
                         size={14}
                       />
                       <span>
@@ -272,7 +272,7 @@ export const ResumePage = () => {
                     </li>
                     <li className="flex gap-2">
                       <ChevronRight
-                        className="text-blue-500 flex-shrink-0 mt-0.5"
+                        className="text-indigo-600 flex-shrink-0 mt-0.5"
                         size={14}
                       />
                       <span>
@@ -283,25 +283,25 @@ export const ResumePage = () => {
                   </ul>
                 </div>
 
-                <div className="backdrop-blur-sm p-4 sm:p-5 transition-all bg-gradient-to-br from-purple-100/40 to-pink-100/40 border border-purple-200/50 hover:border-purple-300/70">
+                <div className="backdrop-blur-sm p-4 sm:p-5 transition-all bg-gradient-to-br from-slate-100/40 to-indigo-100/40 border border-gray-300/50 hover:border-indigo-300/70">
                   <div className="mb-3">
-                    <h3 className="text-base sm:text-lg font-bold text-purple-900">
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900">
                       Salesforce Developer
                     </h3>
-                    <p className="font-semibold text-sm text-purple-600">
+                    <p className="font-semibold text-sm text-indigo-600">
                       BAJAJ FINSERV
                     </p>
                     <p className="text-xs text-gray-600">
                       Pune/Bengaluru, India
                     </p>
-                    <span className="inline-block mt-2 px-3 py-1 rounded-full text-xs font-semibold bg-purple-200 border border-purple-400 text-purple-700">
+                    <span className="inline-block mt-2 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-200 border border-indigo-400 text-indigo-700">
                       May 2023 – Oct 2024
                     </span>
                   </div>
                   <ul className="space-y-2 text-xs text-gray-700">
                     <li className="flex gap-2">
                       <ChevronRight
-                        className="text-purple-500 flex-shrink-0 mt-0.5"
+                        className="text-indigo-600 flex-shrink-0 mt-0.5"
                         size={14}
                       />
                       <span>
@@ -310,7 +310,7 @@ export const ResumePage = () => {
                     </li>
                     <li className="flex gap-2">
                       <ChevronRight
-                        className="text-purple-500 flex-shrink-0 mt-0.5"
+                        className="text-indigo-600 flex-shrink-0 mt-0.5"
                         size={14}
                       />
                       <span>
@@ -319,7 +319,7 @@ export const ResumePage = () => {
                     </li>
                     <li className="flex gap-2">
                       <ChevronRight
-                        className="text-purple-500 flex-shrink-0 mt-0.5"
+                        className="text-indigo-600 flex-shrink-0 mt-0.5"
                         size={14}
                       />
                       <span>
@@ -329,25 +329,25 @@ export const ResumePage = () => {
                   </ul>
                 </div>
 
-                <div className="backdrop-blur-sm p-4 sm:p-5 transition-all bg-gradient-to-br from-green-100/40 to-emerald-100/40 border border-green-200/50 hover:border-green-300/70">
+                <div className="backdrop-blur-sm p-4 sm:p-5 transition-all bg-gradient-to-br from-slate-100/40 to-indigo-100/40 border border-gray-300/50 hover:border-indigo-300/70">
                   <div className="mb-3">
-                    <h3 className="text-base sm:text-lg font-bold text-green-900">
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900">
                       Software Engineer
                     </h3>
-                    <p className="font-semibold text-sm text-green-600">
+                    <p className="font-semibold text-sm text-indigo-600">
                       BAJAJ FINSERV
                     </p>
                     <p className="text-xs text-gray-600">
                       Pune/Bengaluru, India
                     </p>
-                    <span className="inline-block mt-2 px-3 py-1 rounded-full text-xs font-semibold bg-green-200 border border-green-400 text-green-700">
+                    <span className="inline-block mt-2 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-200 border border-indigo-400 text-indigo-700">
                       Nov 2022 – Apr 2023
                     </span>
                   </div>
                   <ul className="space-y-2 text-xs text-gray-700">
                     <li className="flex gap-2">
                       <ChevronRight
-                        className="text-green-500 flex-shrink-0 mt-0.5"
+                        className="text-indigo-600 flex-shrink-0 mt-0.5"
                         size={14}
                       />
                       <span>
@@ -356,7 +356,7 @@ export const ResumePage = () => {
                     </li>
                     <li className="flex gap-2">
                       <ChevronRight
-                        className="text-green-500 flex-shrink-0 mt-0.5"
+                        className="text-indigo-600 flex-shrink-0 mt-0.5"
                         size={14}
                       />
                       <span>
@@ -365,7 +365,7 @@ export const ResumePage = () => {
                     </li>
                     <li className="flex gap-2">
                       <ChevronRight
-                        className="text-green-500 flex-shrink-0 mt-0.5"
+                        className="text-indigo-600 flex-shrink-0 mt-0.5"
                         size={14}
                       />
                       <span>
@@ -377,12 +377,12 @@ export const ResumePage = () => {
               </div>
             </div>
 
-            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-gradient-to-br from-yellow-50/60 to-orange-50/60 border border-gray-300/50 hover:border-yellow-300/70">
+            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-gradient-to-br from-slate-50/60 to-indigo-50/60 border border-gray-300/50 hover:border-indigo-300/70">
               <div className="flex items-center gap-3 mb-5">
-                <div className="p-2 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-lg">
+                <div className="p-2 bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-lg">
                   <Award className="text-white" size={20} />
                 </div>
-                <h2 className="text-xl sm:text-2xl font-bold text-yellow-900">
+                <h2 className="text-xl sm:text-2xl font-bold text-slate-900">
                   Certifications
                 </h2>
               </div>
@@ -396,10 +396,10 @@ export const ResumePage = () => {
                 ].map((cert, idx) => (
                   <div
                     key={idx}
-                    className="flex items-center gap-2 p-2 sm:p-3 transition-all backdrop-blur-sm bg-gradient-to-r from-yellow-100/40 to-orange-100/40 border border-gray-300/50 hover:border-yellow-300/70"
+                    className="flex items-center gap-2 p-2 sm:p-3 transition-all backdrop-blur-sm bg-gradient-to-r from-slate-100/40 to-indigo-100/40 border border-gray-300/50 hover:border-indigo-300/70"
                   >
                     <Award
-                      className="text-orange-500 flex-shrink-0"
+                      className="text-indigo-600 flex-shrink-0"
                       size={16}
                     />
                     <span className="text-xs font-medium text-gray-700">
