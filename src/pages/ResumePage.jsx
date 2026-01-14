@@ -82,7 +82,7 @@ export const ResumePage = () => {
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
           <div className="space-y-0">
-            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-gradient-to-br from-slate-50/60 to-slate-100/60 border border-gray-300/50 hover:border-indigo-300/70">
+            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-white/10 from-slate-50/60 to-slate-100/60 border border-gray-300/50 hover:border-indigo-300/70">
               <div className="mb-6 text-center">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1 tracking-tight text-slate-900">
                   RUSHIKESH
@@ -118,9 +118,9 @@ export const ResumePage = () => {
               </div>
             </div>
 
-            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-gradient-to-br from-slate-50/60 to-indigo-50/60 border border-gray-300/50 hover:border-indigo-300/70">
+            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-white/10 from-slate-50/60 to-indigo-50/60 border border-gray-300/50 hover:border-indigo-300/70">
               <div className="flex items-center gap-3 mb-4">
-                <div className="p-2 bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-lg">
+                <div className="p-2 bg-white/10 from-indigo-600 to-indigo-700 rounded-lg">
                   <Zap className="text-white" size={20} />
                 </div>
                 <h2 className="text-xl sm:text-2xl font-bold text-slate-900">
@@ -139,9 +139,9 @@ export const ResumePage = () => {
               </p>
             </div>
 
-            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-gradient-to-br from-slate-50/60 to-indigo-50/60 border border-gray-300/50 hover:border-indigo-300/70">
+            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-white/10 from-slate-50/60 to-indigo-50/60 border border-gray-300/50 hover:border-indigo-300/70">
               <div className="flex items-center gap-3 mb-5">
-                <div className="p-2 bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-lg">
+                <div className="p-2 bg-white/10 from-indigo-600 to-indigo-700 rounded-lg">
                   <Code className="text-white" size={20} />
                 </div>
                 <h2 className="text-xl sm:text-2xl font-bold text-slate-900">
@@ -165,7 +165,7 @@ export const ResumePage = () => {
                 ))}
               </div>
 
-              <div className="backdrop-blur-sm p-3 sm:p-5 min-h-40 bg-gradient-to-br from-green-100/40 to-cyan-100/40 border border-gray-300/50">
+              <div className="backdrop-blur-sm p-3 sm:p-5 min-h-40 bg-white/10 from-green-100/40 to-cyan-100/40 border border-gray-300/50">
                 <h3 className="text-xs sm:text-sm font-bold mb-3 text-slate-900">
                   {skillCategories[activeSkillCategory].title}
                 </h3>
@@ -184,9 +184,9 @@ export const ResumePage = () => {
               </div>
             </div>
 
-            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-gradient-to-br from-slate-50/60 to-indigo-50/60 border border-gray-300/50 hover:border-indigo-300/70">
+            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-white/10 from-slate-50/60 to-indigo-50/60 border border-gray-300/50 hover:border-indigo-300/70">
               <div className="flex items-center gap-3 mb-5">
-                <div className="p-2 bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-lg">
+                <div className="p-2 bg-white/10 from-indigo-600 to-indigo-700 rounded-lg">
                   <GraduationCap className="text-white" size={20} />
                 </div>
                 <h2 className="text-xl sm:text-2xl font-bold text-slate-900">
@@ -215,9 +215,9 @@ export const ResumePage = () => {
           </div>
 
           <div className="space-y-0">
-            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-gradient-to-br from-slate-50/60 to-indigo-50/60 border border-gray-300/50 hover:border-indigo-300/70">
+            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-white/10 from-slate-50/60 to-indigo-50/60 border border-gray-300/50 hover:border-indigo-300/70">
               <div className="flex items-center gap-3 mb-6">
-                <div className="p-2 bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-lg">
+                <div className="p-2 bg-white/10 from-indigo-600 to-indigo-700 rounded-lg">
                   <Briefcase className="text-white" size={24} />
                 </div>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900">
@@ -226,7 +226,7 @@ export const ResumePage = () => {
               </div>
 
               <div className="space-y-0 md:space-y-6">
-                <div className="backdrop-blur-sm p-4 sm:p-5 transition-all bg-gradient-to-br from-slate-100/40 to-indigo-100/40 border border-gray-300/50 hover:border-indigo-300/70">
+                <div className="backdrop-blur-sm p-4 sm:p-5 transition-all bg-white/10 from-slate-100/40 to-indigo-100/40 border border-gray-300/50 hover:border-indigo-300/70">
                   <div className="mb-3">
                     <h3 className="text-base sm:text-lg font-bold text-slate-900">
                       Senior Salesforce Developer
@@ -283,7 +283,7 @@ export const ResumePage = () => {
                   </ul>
                 </div>
 
-                <div className="backdrop-blur-sm p-4 sm:p-5 transition-all bg-gradient-to-br from-slate-100/40 to-indigo-100/40 border border-gray-300/50 hover:border-indigo-300/70">
+                <div className="backdrop-blur-sm p-4 sm:p-5 transition-all bg-white/10 from-slate-100/40 to-indigo-100/40 border border-gray-300/50 hover:border-indigo-300/70">
                   <div className="mb-3">
                     <h3 className="text-base sm:text-lg font-bold text-slate-900">
                       Salesforce Developer
@@ -329,7 +329,7 @@ export const ResumePage = () => {
                   </ul>
                 </div>
 
-                <div className="backdrop-blur-sm p-4 sm:p-5 transition-all bg-gradient-to-br from-slate-100/40 to-indigo-100/40 border border-gray-300/50 hover:border-indigo-300/70">
+                <div className="backdrop-blur-sm p-4 sm:p-5 transition-all bg-white/10 from-slate-100/40 to-indigo-100/40 border border-gray-300/50 hover:border-indigo-300/70">
                   <div className="mb-3">
                     <h3 className="text-base sm:text-lg font-bold text-slate-900">
                       Software Engineer
@@ -377,9 +377,9 @@ export const ResumePage = () => {
               </div>
             </div>
 
-            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-gradient-to-br from-slate-50/60 to-indigo-50/60 border border-gray-300/50 hover:border-indigo-300/70">
+            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-white/10 from-slate-50/60 to-indigo-50/60 border border-gray-300/50 hover:border-indigo-300/70">
               <div className="flex items-center gap-3 mb-5">
-                <div className="p-2 bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-lg">
+                <div className="p-2 bg-white/10 from-indigo-600 to-indigo-700 rounded-lg">
                   <Award className="text-white" size={20} />
                 </div>
                 <h2 className="text-xl sm:text-2xl font-bold text-slate-900">
