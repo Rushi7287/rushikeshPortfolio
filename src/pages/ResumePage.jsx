@@ -75,7 +75,7 @@ export const ResumePage = () => {
   };
 
   return (
-    <div style={{ fontFamily: "cursive" }}>
+    <div style={{ fontFamily: "Preahvihear" }}>
       <div
         className="from-slate-900 via-slate-800 to-slate-900 max-w-7xl mx-auto bg-white/10"
         style={{ borderRadius: "8px", padding: "10px" }}
