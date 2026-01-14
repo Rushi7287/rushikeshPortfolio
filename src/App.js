@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
-import { Moon, Sun } from 'lucide-react';
+// import { Moon, Sun } from 'lucide-react';
 import { HashRouter as BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { ProjectsPage } from './pages/ProjectsPage';
 import { LearningPage } from './pages/LearningPage';
 import { LearningDetailPage } from './pages/LearningDetailPage';
-import { AboutPage } from './pages/AboutPage'; // Import the new AboutPage
-import { LinkAdapter } from './components/LinkAdapter';
+import { ResumePage } from './pages/ResumePage'; // Import the new AboutPage
+// import { LinkAdapter } from './components/LinkAdapter';
 
 function App() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark] = useState(false);
 
   const bgClass = isDark ? 'bg-gray-900' : 'bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50';
-  const glassClass = isDark 
-    ? 'bg-gray-800/40 backdrop-blur-lg border border-gray-700/50' 
-    : 'bg-white/40 backdrop-blur-lg border border-white/50';
-  const textClass = isDark ? 'text-gray-100' : 'text-gray-800';
-  const textSecondaryClass = isDark ? 'text-gray-300' : 'text-gray-600';
+  // const glassClass = isDark 
+  //   ? 'bg-gray-800/40 backdrop-blur-lg border border-gray-700/50' 
+  //   : 'bg-white/40 backdrop-blur-lg border border-white/50';
+  // const textClass = isDark ? 'text-gray-100' : 'text-gray-800';
+  // const textSecondaryClass = isDark ? 'text-gray-300' : 'text-gray-600';
 
   return (
     <BrowserRouter>
@@ -62,7 +62,7 @@ function App() {
             <Route path="/projects" element={<ProjectsPage isDark={isDark} />} />
             <Route path="/learning" element={<LearningPage isDark={isDark} />} />
             <Route path="/learning/:topicId" element={<LearningDetailPage isDark={isDark} />} />
-            <Route path="/about" element={<AboutPage isDark={isDark} />} />
+            <Route path="/resume" element={<ResumePage isDark={isDark} />} />
           </Routes>
         </main>
       </div>
