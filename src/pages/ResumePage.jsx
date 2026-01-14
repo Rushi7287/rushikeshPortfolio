@@ -40,7 +40,7 @@ export const ResumePage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-white py-8 px-2">
       <div className="max-w-7xl mx-auto">
-        <div className="backdrop-blur-md rounded-md p-12 shadow-2xl bg-gradient-to-br from-blue-50/50 via-purple-50/50 to-pink-50/50 border border-blue-200/30">
+        {/* <div className="backdrop-blur-md rounded-md p-12 shadow-2xl bg-gradient-to-br from-blue-50/50 via-purple-50/50 to-pink-50/50 border border-blue-200/30"> */}
           
           <div className="text-center mb-12">
             <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
@@ -230,7 +230,7 @@ export const ResumePage = () => {
               </div>
             </div>
           </div>
-        </div>
+        {/* </div> */}
       </div>
     </div>
   );
