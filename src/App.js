@@ -56,7 +56,7 @@ function App() {
           </div>
         </header> */}
 
-        <main className="max-w-7xl mx-auto px-6 py-8">
+        {/* <main className="max-w-7xl mx-auto px-6 py-8"> */}
           <Routes>
             <Route path="/" element={<Navigate to="/projects" replace />} />
             <Route path="/projects" element={<ProjectsPage isDark={isDark} />} />
@@ -64,7 +64,7 @@ function App() {
             <Route path="/learning/:topicId" element={<LearningDetailPage isDark={isDark} />} />
             <Route path="/resume" element={<ResumePage isDark={isDark} />} />
           </Routes>
-        </main>
+        {/* </main> */}
       </div>
     </BrowserRouter>
   );
