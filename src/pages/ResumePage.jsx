@@ -75,28 +75,28 @@ export const ResumePage = () => {
   };
 
   return (
-    <div
-      style={{ fontFamily: "monospace" }}
-    >
-      <div className="max-w-7xl mx-auto">
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <div className="space-y-6">
-            <div className="backdrop-blur-xl rounded-md p-8 shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-blue-50/60 to-indigo-50/60 border border-blue-200/50 hover:border-blue-300/70">
-              <div className="mb-6">
-                <h1 className="text-4xl font-bold mb-1 tracking-tight text-blue-900">
+    <div style={{ fontFamily: "monospace" }}>
+      <div
+        className="from-slate-900 via-slate-800 to-slate-900 max-w-7xl mx-auto backdrop-blur-2xl bg-white/10 shadow-2xl border border-gray-300/50 w-full"
+        style={{ borderRadius: "8px", padding: "10px" }}
+      >
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+          <div className="space-y-0">
+            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-gradient-to-br from-blue-50/60 to-indigo-50/60 border border-gray-300/50 hover:border-blue-300/70">
+              <div className="mb-6 text-center">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1 tracking-tight text-blue-900">
                   RUSHIKESH
                 </h1>
-                <h1 className="text-4xl font-bold mb-3 text-blue-900 via-purple-500 to-pink-500 bg-clip-text">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 text-blue-900 via-purple-500 to-pink-500 bg-clip-text">
                   KALE
                 </h1>
-                <p className="text-lg font-light text-purple-700">
+                <p className="text-base sm:text-lg font-light text-purple-700">
                   Senior Salesforce Developer
                 </p>
                 <p className="text-sm text-purple-600">& Team Lead</p>
               </div>
 
-              <div className="space-y-3 border-t pt-6 border-blue-200/50">
+              <div className="space-y-3 border-t border-gray-300/50 pt-6">
                 <div className="flex items-center gap-3 text-sm text-gray-700 hover:text-blue-900 transition-colors">
                   <MapPin size={18} className="text-blue-500 flex-shrink-0" />
                   <span>Pune, Maharashtra, India</span>
@@ -118,12 +118,14 @@ export const ResumePage = () => {
               </div>
             </div>
 
-            <div className="backdrop-blur-xl rounded-md p-8 shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-purple-50/60 to-pink-50/60 border border-purple-200/50 hover:border-purple-300/70">
+            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-gradient-to-br from-purple-50/60 to-pink-50/60 border border-gray-300/50 hover:border-purple-300/70">
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-2 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg">
                   <Zap className="text-white" size={20} />
                 </div>
-                <h2 className="text-2xl font-bold text-purple-900">About</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-purple-900">
+                  About
+                </h2>
               </div>
               <p className="leading-relaxed text-sm text-gray-700">
                 Senior Salesforce Developer and Team Lead with{" "}
@@ -137,12 +139,14 @@ export const ResumePage = () => {
               </p>
             </div>
 
-            <div className="backdrop-blur-xl rounded-md p-8 shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-green-50/60 to-cyan-50/60 border border-green-200/50 hover:border-green-300/70">
+            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-gradient-to-br from-green-50/60 to-cyan-50/60 border border-gray-300/50 hover:border-green-300/70">
               <div className="flex items-center gap-3 mb-5">
                 <div className="p-2 bg-gradient-to-br from-green-500 to-cyan-500 rounded-lg">
                   <Code className="text-white" size={20} />
                 </div>
-                <h2 className="text-2xl font-bold text-green-900">Skills</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-green-900">
+                  Skills
+                </h2>
               </div>
 
               <div className="flex flex-wrap gap-2 mb-5">
@@ -153,7 +157,7 @@ export const ResumePage = () => {
                     className={`px-4 py-2 rounded-full font-medium text-xs transition-all duration-200 transform ${
                       activeSkillCategory === key
                         ? `${category.color} text-white shadow-lg scale-105`
-                        : "backdrop-blur-sm bg-gradient-to-r from-gray-100 to-gray-200 text-gray-700 border border-gray-300 hover:shadow-md"
+                        : "backdrop-blur-sm bg-gradient-to-r from-gray-100 to-gray-200 text-gray-700 border border-gray-300/50 hover:border-gray-400"
                     }`}
                   >
                     {category.title}
@@ -161,8 +165,8 @@ export const ResumePage = () => {
                 ))}
               </div>
 
-              <div className="backdrop-blur-sm p-5 rounded-xl min-h-40 bg-gradient-to-br from-green-100/40 to-cyan-100/40 border border-green-200/50">
-                <h3 className="text-sm font-bold mb-3 text-green-900">
+              <div className="backdrop-blur-sm p-3 sm:p-5 min-h-40 bg-gradient-to-br from-green-100/40 to-cyan-100/40 border border-gray-300/50">
+                <h3 className="text-xs sm:text-sm font-bold mb-3 text-green-900">
                   {skillCategories[activeSkillCategory].title}
                 </h3>
                 <div className="flex flex-wrap gap-2">
@@ -170,7 +174,7 @@ export const ResumePage = () => {
                     (skill, idx) => (
                       <span
                         key={idx}
-                        className="px-3 py-1 rounded-lg text-xs font-medium backdrop-blur-sm bg-gradient-to-r from-gray-100 to-gray-200 text-gray-700 border border-gray-300 hover:border-gray-400 transition-colors"
+                        className="px-3 py-1 rounded-lg text-xs font-medium backdrop-blur-sm bg-gradient-to-r from-gray-100 to-gray-200 text-gray-700 border border-gray-300/50 hover:border-gray-400 transition-colors"
                       >
                         {skill}
                       </span>
@@ -180,26 +184,26 @@ export const ResumePage = () => {
               </div>
             </div>
 
-            <div className="backdrop-blur-xl rounded-md p-8 shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-indigo-50/60 to-blue-50/60 border border-indigo-200/50 hover:border-indigo-300/70">
+            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-gradient-to-br from-indigo-50/60 to-blue-50/60 border border-gray-300/50 hover:border-indigo-300/70">
               <div className="flex items-center gap-3 mb-5">
                 <div className="p-2 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-lg">
                   <GraduationCap className="text-white" size={20} />
                 </div>
-                <h2 className="text-2xl font-bold text-indigo-900">
+                <h2 className="text-xl sm:text-2xl font-bold text-indigo-900">
                   Education
                 </h2>
               </div>
               <div className="space-y-3">
-                <div className="backdrop-blur-sm p-4 rounded-lg hover:shadow-lg transition-all bg-gradient-to-r from-indigo-100/40 to-blue-100/40 border border-indigo-200/50 hover:border-indigo-300/70">
-                  <h3 className="font-bold text-sm text-indigo-900">
+                <div className="backdrop-blur-sm p-3 sm:p-4 transition-all bg-gradient-to-r from-indigo-100/40 to-blue-100/40 border border-gray-300/50 hover:border-indigo-300/70">
+                  <h3 className="font-bold text-xs sm:text-sm text-indigo-900">
                     PG Diploma in Advanced Computing
                   </h3>
                   <p className="text-xs text-gray-600">
                     C-DAC, Pune • Mar 2022 – Sep 2022
                   </p>
                 </div>
-                <div className="backdrop-blur-sm p-4 rounded-lg hover:shadow-lg transition-all bg-gradient-to-r from-indigo-100/40 to-blue-100/40 border border-indigo-200/50 hover:border-indigo-300/70">
-                  <h3 className="font-bold text-sm text-indigo-900">
+                <div className="backdrop-blur-sm p-3 sm:p-4 transition-all bg-gradient-to-r from-indigo-100/40 to-blue-100/40 border border-indigo-200/50 hover:border-indigo-300/70">
+                  <h3 className="font-bold text-xs sm:text-sm text-indigo-900">
                     Bachelor of Engineering (Mechanical)
                   </h3>
                   <p className="text-xs text-gray-600">
@@ -210,21 +214,21 @@ export const ResumePage = () => {
             </div>
           </div>
 
-          <div className="space-y-6">
-            <div className="backdrop-blur-xl rounded-md p-8 shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-orange-50/60 to-red-50/60 border border-orange-200/50 hover:border-orange-300/70">
+          <div className="space-y-0">
+            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-gradient-to-br from-orange-50/60 to-red-50/60 border border-gray-300/50 hover:border-orange-300/70">
               <div className="flex items-center gap-3 mb-6">
                 <div className="p-2 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg">
                   <Briefcase className="text-white" size={24} />
                 </div>
-                <h2 className="text-3xl font-bold text-orange-900">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-orange-900">
                   Experience
                 </h2>
               </div>
 
-              <div className="space-y-6">
-                <div className="backdrop-blur-sm p-5 rounded-xl hover:shadow-lg transition-all bg-gradient-to-br from-blue-100/40 to-cyan-100/40 border border-blue-200/50 hover:border-blue-300/70">
+              <div className="space-y-0 md:space-y-6">
+                <div className="backdrop-blur-sm p-4 sm:p-5 transition-all bg-gradient-to-br from-blue-100/40 to-cyan-100/40 border border-blue-200/50 hover:border-blue-300/70">
                   <div className="mb-3">
-                    <h3 className="text-lg font-bold text-blue-900">
+                    <h3 className="text-base sm:text-lg font-bold text-blue-900">
                       Senior Salesforce Developer
                     </h3>
                     <p className="font-semibold text-sm text-blue-600">
@@ -279,9 +283,9 @@ export const ResumePage = () => {
                   </ul>
                 </div>
 
-                <div className="backdrop-blur-sm p-5 rounded-xl hover:shadow-lg transition-all bg-gradient-to-br from-purple-100/40 to-pink-100/40 border border-purple-200/50 hover:border-purple-300/70">
+                <div className="backdrop-blur-sm p-4 sm:p-5 transition-all bg-gradient-to-br from-purple-100/40 to-pink-100/40 border border-purple-200/50 hover:border-purple-300/70">
                   <div className="mb-3">
-                    <h3 className="text-lg font-bold text-purple-900">
+                    <h3 className="text-base sm:text-lg font-bold text-purple-900">
                       Salesforce Developer
                     </h3>
                     <p className="font-semibold text-sm text-purple-600">
@@ -325,9 +329,9 @@ export const ResumePage = () => {
                   </ul>
                 </div>
 
-                <div className="backdrop-blur-sm p-5 rounded-xl hover:shadow-lg transition-all bg-gradient-to-br from-green-100/40 to-emerald-100/40 border border-green-200/50 hover:border-green-300/70">
+                <div className="backdrop-blur-sm p-4 sm:p-5 transition-all bg-gradient-to-br from-green-100/40 to-emerald-100/40 border border-green-200/50 hover:border-green-300/70">
                   <div className="mb-3">
-                    <h3 className="text-lg font-bold text-green-900">
+                    <h3 className="text-base sm:text-lg font-bold text-green-900">
                       Software Engineer
                     </h3>
                     <p className="font-semibold text-sm text-green-600">
@@ -373,12 +377,12 @@ export const ResumePage = () => {
               </div>
             </div>
 
-            <div className="backdrop-blur-xl rounded-md p-8 shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-yellow-50/60 to-orange-50/60 border border-yellow-200/50 hover:border-yellow-300/70">
+            <div className="backdrop-blur-xl p-4 sm:p-6 md:p-8 transition-all duration-300 bg-gradient-to-br from-yellow-50/60 to-orange-50/60 border border-gray-300/50 hover:border-yellow-300/70">
               <div className="flex items-center gap-3 mb-5">
                 <div className="p-2 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-lg">
                   <Award className="text-white" size={20} />
                 </div>
-                <h2 className="text-2xl font-bold text-yellow-900">
+                <h2 className="text-xl sm:text-2xl font-bold text-yellow-900">
                   Certifications
                 </h2>
               </div>
@@ -392,7 +396,7 @@ export const ResumePage = () => {
                 ].map((cert, idx) => (
                   <div
                     key={idx}
-                    className="flex items-center gap-2 p-3 rounded-lg hover:shadow-lg transition-all backdrop-blur-sm bg-gradient-to-r from-yellow-100/40 to-orange-100/40 border border-yellow-200/50 hover:border-yellow-300/70"
+                    className="flex items-center gap-2 p-2 sm:p-3 transition-all backdrop-blur-sm bg-gradient-to-r from-yellow-100/40 to-orange-100/40 border border-gray-300/50 hover:border-yellow-300/70"
                   >
                     <Award
                       className="text-orange-500 flex-shrink-0"
