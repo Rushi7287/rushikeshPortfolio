@@ -14,3 +14,45 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+GET /api/comments/javascript/1
+{
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "userName": "John Doe",
+      "text": "Great explanation of JavaScript fundamentals!",
+      "timestamp": "2024-01-15T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "userName": "Jane Smith",
+      "text": "Very helpful content, thanks!",
+      "timestamp": "2024-01-16T14:20:00Z"
+    }
+  ],
+  "total": 2
+}
+
+POST /api/comments
+{
+  "topicId": "javascript",
+  "fileRank": 1,
+  "userName": "Alice Johnson",
+  "text": "This is really helpful for beginners!"
+}
+
+{
+  "success": true,
+  "message": "Comment posted successfully",
+  "data": {
+    "id": 3,
+    "topicId": "javascript",
+    "fileRank": 1,
+    "userName": "Alice Johnson",
+    "text": "This is really helpful for beginners!",
+    "timestamp": "2024-01-17T09:15:00Z"
+  }
+}
