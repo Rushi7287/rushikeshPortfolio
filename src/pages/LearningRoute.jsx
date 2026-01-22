@@ -4,6 +4,12 @@ import { FileText, Moon, Sun, ChevronLeft, ChevronRight, Menu, X, ChevronDown, B
 // Topics JSON structure with icons
 const topicsData = [
   {
+    id: 'project',
+    name: 'Project Management',
+    description: 'Learn the core concepts of Project Management',
+    icon: Code
+  },
+  {
     id: 'javascript',
     name: 'JavaScript Fundamentals',
     description: 'Learn the core concepts of JavaScript programming',
@@ -40,6 +46,7 @@ const API_BASE_URL = 'https://jsonplaceholder.typicode.com';
 
 // Function to load files dynamically from public/content folder
 const loadFiles = async (topicId) => {
+  sessionStorage.setItem('LSKey[c]page', 'react');
   try {
     const response = await fetch(`/rushikeshPortfolio/content/${topicId}/manifest.json`);
     if (!response.ok) {
@@ -288,7 +295,8 @@ const LearningRoute = () => {
   };
 
   const handleBackToPortfolio = () => {
-    window.location.href = 'https://dns000006d2jt2ak-dev-ed.develop.my.site.com/rushikeshPortfolio/s/'; // Change this URL to your portfolio URL
+    sessionStorage.setItem('LSKey[c]page', 'sfdc');
+    window.location.reload();
   };
 
   const currentFile = files[currentFileIndex];
