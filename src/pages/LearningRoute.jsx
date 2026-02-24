@@ -69,41 +69,185 @@ const TopicCard = memo(({ topic, isActive, isExpanded, files, onTopicClick, onFi
 // Topics data
 const topicsData = [
   {
-    id: 'project',
-    name: 'Project Management',
-    description: 'Learn the core concepts of Project Management',
+    id: '01_salesforce_architecture',
+    name: 'Salesforce Architecture',
+    description: 'Multitenancy, metadata, governor limits & environments',
     icon: Code
   },
   {
-    id: 'javascript',
-    name: 'JavaScript Fundamentals',
-    description: 'Learn the core concepts of JavaScript programming',
+    id: '02_data_model',
+    name: 'Data Model',
+    description: 'Objects, fields, relationships & record types',
     icon: Code
   },
   {
-    id: 'ai',
-    name: 'Artificial Intelligence',
-    description: 'Learn the core concepts of Artificial Intelligence programming',
+    id: '03_apex_basics',
+    name: 'Apex Basics',
+    description: 'Variables, collections, methods & access modifiers',
     icon: Code
   },
   {
-    id: 'react',
-    name: 'React Basics',
-    description: 'Understanding React components and hooks',
-    icon: Zap
+    id: '04_soql_sosl',
+    name: 'SOQL & SOSL',
+    description: 'Queries, relationships, aggregates & dynamic SOQL',
+    icon: Code
   },
   {
-    id: 'lwc',
+    id: '05_triggers',
+    name: 'Triggers',
+    description: 'Trigger syntax, context variables, bulkification & frameworks',
+    icon: Code
+  },
+  {
+    id: '06_order_of_execution',
+    name: 'Order of Execution',
+    description: 'Save order, trigger & flow interaction',
+    icon: Code
+  },
+  {
+    id: '07_asynchronous_apex',
+    name: 'Asynchronous Apex',
+    description: 'Future, Queueable, Batch & Scheduled Apex',
+    icon: Code
+  },
+  {
+    id: '08_advanced_apex',
+    name: 'Advanced Apex',
+    description: 'DML methods, savepoints, mixed DML & dynamic Apex',
+    icon: Code
+  },
+  {
+    id: '09_configuration_support',
+    name: 'Configuration Support',
+    description: 'Custom metadata, custom settings & custom labels',
+    icon: Code
+  },
+  {
+    id: '10_testing',
+    name: 'Testing',
+    description: 'Test classes, async testing, mocking & data strategies',
+    icon: Code
+  },
+  {
+    id: '11_lightning_web_components',
     name: 'Lightning Web Components',
-    description: 'Building modern Salesforce applications with LWC',
-    icon: BookOpen
+    description: 'LWC architecture, decorators, lifecycle & performance',
+    icon: Code
   },
   {
-    id: 'nodejs',
-    name: 'Node.js Backend',
-    description: 'Server-side JavaScript with Node.js',
-    icon: Database
-  }
+    id: '12_aura_framework',
+    name: 'Aura Framework',
+    description: 'Component structure, events & communication model',
+    icon: Code
+  },
+  {
+    id: '13_visualforce',
+    name: 'Visualforce',
+    description: 'Controllers, extensions, view state & VF vs Lightning',
+    icon: Code
+  },
+  {
+    id: '14_flow',
+    name: 'Flow',
+    description: 'Record-triggered, screen & autolaunched flows',
+    icon: Code
+  },
+  {
+    id: '15_legacy_automation',
+    name: 'Legacy Automation',
+    description: 'Workflow rules, Process Builder & approval processes',
+    icon: Code
+  },
+  {
+    id: '16_api_fundamentals',
+    name: 'API Fundamentals',
+    description: 'REST API, SOAP API & Apex REST',
+    icon: Code
+  },
+  {
+    id: '17_callouts',
+    name: 'Callouts',
+    description: 'HTTP callouts, named credentials, OAuth & retry',
+    icon: Code
+  },
+  {
+    id: '18_event_based_integration',
+    name: 'Event-Based Integration',
+    description: 'Platform Events, Change Data Capture & ReplayId',
+    icon: Code
+  },
+  {
+    id: '19_integration_design_patterns',
+    name: 'Integration Design Patterns',
+    description: 'Request-response, fire & forget & middleware patterns',
+    icon: Code
+  },
+  {
+    id: '20_object_and_field_security',
+    name: 'Object & Field Security',
+    description: 'OWD, role hierarchy, sharing rules & FLS enforcement',
+    icon: Code
+  },
+  {
+    id: '21_user_management',
+    name: 'User Management',
+    description: 'Profiles, permission sets & external user licenses',
+    icon: Code
+  },
+  {
+    id: '22_experience_cloud_architecture',
+    name: 'Experience Cloud Architecture',
+    description: 'Community types, licenses & partner role structure',
+    icon: Code
+  },
+  {
+    id: '23_external_data_access',
+    name: 'External Data Access',
+    description: 'Sharing sets, share groups & guest user security',
+    icon: Code
+  },
+  {
+    id: '24_customization',
+    name: 'Experience Cloud Customization',
+    description: 'Experience Builder, CMS, login flows & self registration',
+    icon: Code
+  },
+  {
+    id: '25_salesforce_sites',
+    name: 'Salesforce Sites',
+    description: 'Public access settings, guest user security & page access',
+    icon: Code
+  },
+  {
+    id: '26_deployment_methods',
+    name: 'Deployment Methods',
+    description: 'Change sets, SFDX, Metadata API & packages',
+    icon: Code
+  },
+  {
+    id: '27_ci_cd',
+    name: 'CI/CD',
+    description: 'Version control & pipeline basics',
+    icon: Code
+  },
+  {
+    id: '28_large_data_volume',
+    name: 'Large Data Volume',
+    description: 'Selective queries, indexes, skinny tables & query plan',
+    icon: Code
+  },
+  {
+    id: '29_scenario_based_questions',
+    name: 'Scenario-Based Questions',
+    description: 'Real-world enterprise scenarios & debugging challenges',
+    icon: Code
+  },
+  {
+    id: '30_project_level_discussion',
+    name: 'Project-Level Discussion',
+    description: 'Architecture, integration, deployment & production strategies',
+    icon: Code
+  },
 ];
 
 // File cache
