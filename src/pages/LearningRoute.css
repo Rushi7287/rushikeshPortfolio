@@ -1456,3 +1456,108 @@ body {
   .home-hero-title { font-size: 1.25rem; }
   .home-hero-icon  { font-size: 2.25rem; }
 }
+
+/* ============================================
+   macOS-style Header Buttons
+   ============================================ */
+
+/* Generic mac pill button — menu toggle & theme toggle */
+.mac-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  color: var(--current-text-primary, #1C1C1E);
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.15s ease;
+  /* Subtle top-gloss like real macOS buttons */
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.85) inset,
+    0 1px 4px rgba(0,0,0,0.08);
+  flex-shrink: 0;
+}
+
+.mac-btn:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: scale(1.06);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.9) inset,
+    0 4px 12px rgba(0,0,0,0.12);
+}
+
+.mac-btn:active {
+  transform: scale(0.94);
+  background: rgba(240,240,245,0.9);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.7) inset, 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Accent variant for theme toggle — shows the current primary colour */
+.mac-btn--accent {
+  color: var(--current-primary, #0A84FF);
+  border-color: rgba(10,132,255,0.18);
+}
+
+.mac-btn--accent:hover {
+  background: var(--current-primary, #0A84FF);
+  color: white;
+  border-color: transparent;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.25) inset,
+    0 4px 14px rgba(10,132,255,0.35);
+}
+
+/* macOS App Icon — gradient square with rounded corners (home button) */
+.mac-app-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(145deg, #1a8fff 0%, #5E5CE6 100%);
+  color: white;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.15s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.15s ease, filter 0.15s ease;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.3) inset,
+    0 3px 10px rgba(10,132,255,0.4),
+    0 1px 3px rgba(0,0,0,0.15);
+}
+
+.mac-app-icon:hover {
+  transform: scale(1.08) translateY(-1px);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.3) inset,
+    0 6px 18px rgba(10,132,255,0.45),
+    0 2px 6px rgba(0,0,0,0.15);
+  filter: brightness(1.08);
+}
+
+.mac-app-icon:active {
+  transform: scale(0.94);
+  filter: brightness(0.95);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.2) inset,
+    0 2px 6px rgba(10,132,255,0.3);
+}
+
+/* Keep mobile-only display rule intact */
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-only {
+    display: flex !important;
+  }
+}

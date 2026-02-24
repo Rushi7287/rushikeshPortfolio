@@ -142,8 +142,20 @@ const HomeScreen = ({ onTopicSelect }) => {
 // ─── Topic Card (Sidebar) ────────────────────────────────────────────────────
 const TopicCard = memo(({ topic, isActive, isExpanded, files, onTopicClick, onFileClick, currentFileIndex, selectedTopic }) => {
   const Icon = topic.icon;
+  const containerRef = useRef(null);
+
+  // Scroll this topic to the top of the sidebar when it becomes active
+  useEffect(() => {
+    if (isActive && containerRef.current) {
+      // Small delay so expansion animation doesn't fight the scroll
+      setTimeout(() => {
+        containerRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 80);
+    }
+  }, [isActive]);
+
   return (
-    <div className="topic-container">
+    <div className="topic-container" ref={containerRef}>
       {isExpanded && files.length > 0 && (
         <div className="topic-connector" style={{ height: `${files.length * 3}rem` }} />
       )}
@@ -338,20 +350,20 @@ const LearningRoute = () => {
         <div className="header-container">
           <div className="header-left">
             {view === 'reader' && (
-              <button onClick={() => setSidebarOpen(o => !o)} className="menu-button mobile-only" aria-label="Toggle menu">
-                {sidebarOpen ? <X size={20} /> : <Menu size={20} />}
+              <button onClick={() => setSidebarOpen(o => !o)} className="mac-btn mobile-only" aria-label="Toggle menu">
+                {sidebarOpen ? <X size={18} strokeWidth={2} /> : <Menu size={18} strokeWidth={2} />}
               </button>
             )}
-            <button onClick={goHome} className="header-icon" style={{ cursor: 'pointer', border: 'none', background: 'none', padding: 0 }} aria-label="Home">
-              <BookOpen size={24} />
+            <button onClick={goHome} className="mac-app-icon" aria-label="Go home">
+              <BookOpen size={20} strokeWidth={2} />
             </button>
             <div className="header-text">
               <h1 className="header-title">My Learning Journey</h1>
               <p className="header-subtitle">Continuous growth through experience</p>
             </div>
           </div>
-          <button onClick={toggleTheme} className="theme-toggle-button" title="Toggle theme" aria-label="Toggle theme">
-            <Palette size={20} />
+          <button onClick={toggleTheme} className="mac-btn mac-btn--accent" title="Toggle theme" aria-label="Toggle theme">
+            <Palette size={18} strokeWidth={2} />
           </button>
         </div>
       </header>
